@@ -143,6 +143,7 @@ hello()
 
 
 // Generators
+
 function* helloWorld() {
     if (true) {
         yield 'Hello, '
@@ -174,3 +175,30 @@ let exponent = 3
 let result = base ** exponent
 
 console.log(`El resultado de ${base} elevado a la ${exponent} es ${result}`)
+
+
+// Objects Entries (Object.entries) desde ES8
+
+const equipo = {
+    frontend: 'Jeshua',
+    backend: 'Angelo',
+    design: 'Angie',
+}
+
+const entries = Object.entries(equipo)
+console.log(entries)
+console.log(`La cantidad del objeto equipo es ${entries.length}`)
+
+// Extraer valores de el Objeto equipo con (Object.values)
+const valoresEquipo = Object.values(equipo)
+console.log(valoresEquipo)
+
+// Agregar Cadenas de String para poner mas texto al principio o final
+
+const string = 'hello';
+console.log(string.padStart(7,'hi'))
+console.log(string.padEnd(12,' ----'))
+
+
+// Async & Await
+
