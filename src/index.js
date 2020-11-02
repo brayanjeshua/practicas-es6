@@ -36,3 +36,13 @@ console.log(education)
 // Aqui es accesible Var y no Let
 
 console.log(globalVar)
+
+
+// Constants
+
+const a = 'El Valor de A';
+
+// Es imposible cambiar el valor de una constante
+// a = 'El Valor de B'
+
+console.log(a)
