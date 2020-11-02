@@ -61,5 +61,37 @@ obj2 = { name, age }
 console.log(obj2)
 
 
+// Arrow Functions- Syntax reducida (Objeto con Arrays)
+
+const names = [
+    { name: 'Jeshua', age:22 },
+    { name: 'Angie', age:20 }
+]
 
 
+
+// Before using map to print 
+
+// let listOfNames = names.map(function(item){
+//     console.log(item.name)
+// })
+
+// Using Arrow Functions
+
+let listOfNames2 = names.map(item => console.log(item.name))
+
+// 2
+
+// let listOfNames3 = (name, age ) => {
+//     ...
+// }
+
+// 3
+
+// let listOfNames4 = name => {
+//     ...
+// }
+
+// 4
+
+// const square = num => num * num
