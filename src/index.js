@@ -138,5 +138,6 @@ console.log (calc.sum(2,2))
 // Import Modules
 
 import hello from './module.js'
+// Bringing Functionality to the Code
+hello()
 
-console.log (hello())
