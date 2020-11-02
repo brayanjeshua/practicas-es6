@@ -46,3 +46,20 @@ const a = 'El Valor de A';
 // a = 'El Valor de B'
 
 console.log(a)
+
+// Parametros de Objetos
+
+let name = 'jeshua'
+let age = 22
+
+// Before ES5
+obj = { name: name, age: age }
+console.log(obj)
+
+// ES6
+obj2 = { name, age }
+console.log(obj2)
+
+
+
+
