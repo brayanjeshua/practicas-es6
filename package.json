@@ -1,5 +1,6 @@
 {
   "name": "practicas-es6",
+  "type": "module",
   "version": "1.0.0",
   "description": "Practicas para ES6",
   "main": "index.js",
