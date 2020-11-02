@@ -95,3 +95,23 @@ let listOfNames2 = names.map(item => console.log(item.name))
 // 4
 
 // const square = num => num * num
+
+
+// Promises
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        // Handle Promises change true or false
+        if (true) {
+            resolve('¡Hey!')
+        } else {
+            reject('¡Ups!')
+        }
+
+    })
+}
+
+
+helloPromise()
+  .then(response => console.log(response))
+  .catch(error => console.log(error))
