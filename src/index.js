@@ -308,3 +308,33 @@ let array = [1,2,3,4,5]
 let num = 2
 console.log(array.flatMap(value => [`${value} por ${num} es ${value * num} `]))
 
+
+// Trim trimStart trimEnd
+
+let textWithSpaces = '            Hello World Jeshua          '
+
+// We can use to trim spaces in the start or the end
+console.log(textWithSpaces.trimStart().trimEnd())
+console.log(textWithSpaces)
+
+
+// Optional try/catch para manejo de errores
+
+// try {
+
+// } catch {
+// error opcional
+// }
+
+
+// Object.fromEntries() permite transformar un arreglo a objetos
+
+let entries = [["name", "jeshua"], ["age", 22]]
+console.log(Object.fromEntries(entries))
+
+
+// Regresar descripcion opcional de valores Symbol
+
+let mySymbl = `My Symbol`
+let symbol = Symbol(mySymbl)
+console.log(symbol.description)
