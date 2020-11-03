@@ -291,3 +291,20 @@ const month = match[2]
 const day = match[3]
 
 console.log('Date ->', year, month, day)
+
+
+// ES10
+
+let array = [1,2,3, [1,2,3, [1,2,3]]]
+
+// Se pasa el parametro de la profundidad para aplanar el Array 
+console.log(array.flat(1))
+console.log(array.flat(2))
+
+// flatMap sirve para mapear arrays y hacer cualquier operacion dentro del Array
+let array = [1,2,3,4,5]
+
+// en este caso el array y devolvermos el valor y luego multiplicado.
+let num = 2
+console.log(array.flatMap(value => [`${value} por ${num} es ${value * num} `]))
+
