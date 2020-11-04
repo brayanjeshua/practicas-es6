@@ -1,4 +1,6 @@
 // Async Course
 
-// API https://rickandmortyapi.com/api/
+// API https://rickandmortyapi.com/api/character/
+
+
 
