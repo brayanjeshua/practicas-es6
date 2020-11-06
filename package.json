@@ -1,12 +1,12 @@
 {
   "name": "practicas-es6",
-  "type": "module",
   "version": "1.0.0",
   "description": "Practicas para ES6",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "callback": "node src/callback.js"
+    "callback": "node src/callback.js",
+    "callback:challenge": "node src/challenge.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/shuarock/practicas-es6/issues"
   },
-  "homepage": "https://github.com/shuarock/practicas-es6#readme"
+  "homepage": "https://github.com/shuarock/practicas-es6#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
