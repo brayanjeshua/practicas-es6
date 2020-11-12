@@ -10,6 +10,7 @@ const request = async (url_api) => {
         console.log(data.info.count)
         console.log(character.name)
         console.log(character.gender)
+        console.log(origin.dimension)
         
     } catch(err) {
         console.error(err)
