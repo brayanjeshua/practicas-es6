@@ -1,17 +1,22 @@
 
 <html>
     <head>
-      <title>PlatziMediaPlayer.js</title>
+      <title>Media Player Javascript</title>
       <link
         rel="stylesheet"
         href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
       />
       <link rel="stylesheet" href="./assets/index.css" />
     </head>
+    <style>
+      .movie {
+        width:50% !important;
+      }
+    </style>
   
     <body>
       <header>
-        <h1>PlatziMediaPlayer.js</h1>
+        <h1>Media Player Javascript</h1>
         <p>An extensible media player.</p>
       </header>
   
@@ -19,10 +24,24 @@
         <video class="movie">
           <source src="./assets/EarthMoonZoom.mp4" />
         </video>
-  
+        <br>
         <button>Play/Pause</button>
 
-        <script></script>
+        <script>
+          const  video = document.querySelector("video");
+          const  button = document.querySelector("button");
+
+          function  MediaPlayer(config) {
+          this.media = config.el;
+          }
+
+          MediaPlayer.prototype.play = function() {
+          this.media.play();
+          };
+
+          const  player = new  MediaPlayer({ el:  video });
+          button.onclick = () =>  player.play();
+        </script>
       </main>
     </body>
   </html>
