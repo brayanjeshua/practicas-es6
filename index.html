@@ -22,21 +22,7 @@
         <br>
         <button>Play/Pause</button>
 
-        <script>
-          const  video = document.querySelector("video");
-          const  button = document.querySelector("button");
-
-          function  MediaPlayer(config) {
-          this.media = config.el;
-          }
-
-          MediaPlayer.prototype.play = function() {
-          this.media.play();
-          };
-
-          const  player = new  MediaPlayer({ el:  video });
-          button.onclick = () =>  player.play();
-        </script>
+        <script src="./assets/index.js" />
       </main>
     </body>
   </html>
